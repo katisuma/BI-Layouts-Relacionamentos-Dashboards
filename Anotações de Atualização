@@ -1,0 +1,62 @@
+Chaves Primaria X Chaves Estrangeiras
+
+Chave primaria são valires que nao se repetem e que cada valor representa uma unica linha da tabela geralmente encontra na tabela dimensão
+Chave estrangeira é uma coluna que valores se repetem geralmente ficam na tabela fato 
+
+Cardinalidade dos Relacionamentos 
+
+1 para muitos (1 -> *) - 1 na tabela caracteristicas e muitos na tabela fato ( tipo letf join)
+Muitos para Muitos (* -> *) - muitos para muitos conectar duas tabela fato ( filtro tem que ser para ambas) (full joinn)
+Um para um (-> 1) - um para um é tabela caracteristicas com outra tabela caracteristicas ( filtro tem que ser para ambas) (inner join)
+
+
+Filtro bidirecional
+É quando as duas setinhas estão esta em sentido opostos quer dizer que a informação transita passando de uma tabela para outra não somente em uma direção
+
+Procv no BI
+
+Power Pivot -  lookupvalue (primeira coluna que eu quero retonar o valor e segunda que tem coluna igual com a outra tabela e da outra tabela tbm)
+e nao precisa estar relacionado ja related precisa
+
+Power Query - é mesclar consultar e bem parecido com os tipos join do sql 
+
+
+
+Power BI Online
+
+Modos de compartilhar relatorios 
+
+- ver se existe workspaces na empresa falar com a TI
+
+1- os workspaces se as pessoas estao neles eles conseguem ver (menos no meu workspace) ( nao recomendado porque as pessoas podem editar os relatorios e cagar eles)
+tipos de acessos no workspaces - administradotr - colocar o visualizador 
+
+2- criar link > configuraçoes > configurações de locatorio > publicar na web > permitir codigos existente ( link qualquer pessoa pode acessar, porem tem problema de sigilo)
+
+3- exportar para power point ou pdf ( nao fica dinamico ) se ela clicar ela consegue acesso 
+
+4- compartilhar > relatorio > inserir e-mail da pessoa ( desmarcar permiryir que os destinatarios criem um conteudo ) e somente quem tem conta pro consegue ver 
+
+5- posso criar apps e as pessoas nao precisam de conta pró - workspace criado > criar a pp > instalação ( criar o layout) > navegação ( quem pode ver)
+
+6 - teams > tem que criar equipes e posso colocar o app para quem nao tem licença pro
+
+SEGURANÇA EM NIVEL DE LINHA ( RLS - ROW LEVEL SECURITY)
+( isso eu faço no power bi desktop )
+ é limitar oque as pessoas podem mexer 
+ 1 - vejo quais filtros ele podem mexer  e vou em gerenciar funçoes > funções > criar > filtro e limito, caso eu queira que a pessoa veja tudo eu coloco True()
+ para ser mais dinamico criar uma tabela com as restrições e soube no bi - depois relaciona com uma tabela que tem uma coluna em comum e vai criar funções - filtro por 
+ e-mail no acessos relatorio coloco [E-mail] = usaername()
+ 
+ 2 - restringir as pessoas que vao ver ( power bi Online) workspaces > vai no conjutos de dados > segurança > ai aparece os filtros que eu criei no desktop > 
+ e coloco o nome do e-mail quem pode ver para ser automatizado tem que esta no grupo de e-mails 
+
+Gateway
+
+Agpra tem a ooção de gateway Enterpriser outras pessoas podem stualiaar tbm, na minha epoca nao podia 
+o arquivo posso jogar no one drive
+
+
+
+
+
