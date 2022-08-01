@@ -19,7 +19,8 @@ Power Pivot -  lookupvalue (primeira coluna que eu quero retonar o valor e segun
 e nao precisa estar relacionado ja related precisa
 
 Power Query - é mesclar consultar e bem parecido com os tipos join do sql 
-
+Criar parametros no Query para nao precisar corrigir na mão o caminho = pagina inicial > gerenciar parametros > novo parametro > valor atual é o caminho da pasta
+depois em fontes eu altero apago a pasta e coloco caminho e depois coloco &
 
 
 Power BI Online
@@ -53,8 +54,17 @@ SEGURANÇA EM NIVEL DE LINHA ( RLS - ROW LEVEL SECURITY)
 
 Gateway
 
-Agpra tem a ooção de gateway Enterpriser outras pessoas podem stualiaar tbm, na minha epoca nao podia 
-o arquivo posso jogar no one drive
+Agora tem a opção de gateway Enterpriser outras pessoas podem atualizar tbm, na minha epoca nao podia 
+o arquivo posso jogar no one drive ( verificar se é possivel fazer com querys do sql )
+
+Dax principais - Calcullate - filtter - all
+
+no BI operadores que eu posso fazer com teste logioc 
+
+concatenar textos = & um 
+testo logico e = &&
+teste logico OU = II
+teste lologico quando uso mais de um ou = in {}
 
 
 
